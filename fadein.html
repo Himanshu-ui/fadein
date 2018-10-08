@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FADE</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: 100px;
+            font-family: Arial;
+            height: 100%;
+            background-color: white;
+            overflow: hidden;
+            color: black;
+        }
+
+        .ele {
+            animation: 1s fadeIn;
+            animation-fill-mode: forwards;
+            visibility: hidden;
+        }
+
+        @keyframes fadeIn {
+            99% {
+                visibility: hidden;
+            }
+            100% {
+                visibility: visible;
+            }
+        }
+
+        .letter::before {
+            opacity: 0;
+        }
+
+        .letter:nth-child(1) {
+            animation: header 1s 1 0.1ms;
+        }
+
+        .letter:nth-child(2) {
+            animation: header 1.2s 0.3ms;
+        }
+
+        .letter:nth-child(3) {
+            animation: header 1.5s 1 0.5ms;
+        }
+
+        .letter:nth-child(4) {
+            animation: header 1.8s 1 1ms;
+        }
+
+        .letter:nth-child(5) {
+            animation: header 2.1s 1 3ms;
+        }
+
+        .letter:nth-child(6) {
+            animation: header 2.4s 1 6ms;
+        }
+
+        .letter:nth-child(7) {
+            animation: header 2.7s 1 12ms;
+        }
+
+        .letter:nth-child(8) {
+            animation: header 3s 1 24ms;
+        }
+
+        .letter:nth-child(9) {
+            animation: header 3.3s 1 48ms;
+        }
+
+        .letter:nth-child(10) {
+            animation: header 3.6s 1 96ms;
+        }
+
+        .letter:nth-child(11) {
+            animation: header 3.9s 1 192ms;
+        }
+
+        .letter:nth-child(12) {
+            animation: header 4.2s 1 384ms;
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+        }
+
+        @keyframes header {
+            0% {
+                opacity: 0;
+                color: white;
+                visibility: visible;
+            }
+            25% {
+                opacity: 0.2;
+                visibility: visible;
+            }
+            50% {
+                opacity: 0.5;
+                visibility: visible;
+            }
+            75% {
+                opacity: 0.8;
+                visibility: visible;
+            }
+            100% {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ele">
+        <span class="letter">S</span>
+        <span class="letter">L</span>
+        <span class="letter">O</span>
+        <span class="letter">W</span>
+        <span class="letter">&nbsp</span>
+        <span class="letter">F</span>
+        <span class="letter">A</span>
+        <span class="letter">D</span>
+        <span class="letter">E</span>
+        <span class="letter">&nbsp</span>
+        <span class="letter">O</span>
+        <span class="letter">N</span>
+    </div>
+
+</body>
+
+</html>
